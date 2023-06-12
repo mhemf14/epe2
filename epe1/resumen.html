@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div  class="mobile-frame" id="summaryWindow" class="window">
+        <h1>Resumen</h1>
+        <p>Información completada en el checklist:</p>
+        <ul id="summaryItems">
+            <!-- Información del checklist -->
+        </ul>
+        <button id="submitButton">Enviar información</button>
+        <p>Fecha y hora de finalización: <span id="completionTime"></span></p>
+        <button id="editButton">Editar</button>
+    </div>
+    <script>
+
+const submitButton = document.getElementById('submitButton');
+submitButton.addEventListener('click', () => {
+   
+    window.alert('¡INFORMACIÓN ENVIADA!');
+    window.location.href = 'login.html';
+
+});
+  
+const editButton = document.getElementById('editButton');
+editButton.addEventListener('click', () => {
+   
+    window.alert('¡Editaste fecha!');
+});
+    </script>
+</body>
+
+</html>
